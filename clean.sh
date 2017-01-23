@@ -1,1 +1,1 @@
-rm -f TCPEchoServer TCPEchoClient
+rm -f TCPEchoServer TCPEchoClient TCPRelay
