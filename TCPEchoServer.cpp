@@ -26,7 +26,7 @@ unsigned short echoServPort = 1112;
 
 TCPServerSocket servSock(echoServPort);     // Server Socket object
 void HandleTCPClient(TCPSocket *sock); // TCP client handling function
-std::mutex mtx;
+//std::mutex mtx;
 
 int main(int argc, char *argv[]) {
   try {
