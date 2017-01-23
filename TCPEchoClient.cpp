@@ -63,6 +63,7 @@ void* worker(void* threadId){
 int main(int argc, char *argv[]) {
   
   pthread_t threads[NUM_THREADS];
+  sleep(2);
   for (int i =0; i < NUM_THREADS; i++){
     int feedback = pthread_create(&threads[i], NULL, worker, (void *)i);
     if (feedback != 0) 
