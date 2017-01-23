@@ -33,7 +33,8 @@ const unsigned int MESSAGES = 100000;
 const int NUM_THREADS = 1;
 int echoStringLen = 128; 
 
-string relayAddr = "127.0.0.1";  
+string relayAddr = "10.0.0.28";  
+//string relayAddr = "127.0.0.1";  
 unsigned short relayPort = 1111;
 
 void* worker(void* threadId){

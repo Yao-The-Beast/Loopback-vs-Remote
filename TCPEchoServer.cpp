@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <sstream>
 #include <pthread.h>
-#include <mutex>
+//#include <mutex>
 
 using namespace std;
 
@@ -76,7 +76,7 @@ void* worker(void* socket){
     return NULL;
   }
 
-  mtx.lock();
+//  mtx.lock();
   if (flag == true){
     flag = false;
     std::ofstream of("latencies.txt");
@@ -94,7 +94,7 @@ void* worker(void* socket){
     std::cout << "Median Latency is: " << latencies[latencies.size() / 2] << std::endl;
     std::cout << "Average Latency is: " << sum/latencies.size() << std::endl;
   }
-  mtx.unlock();
+//  mtx.unlock();
   delete sock;
   return NULL;
 }

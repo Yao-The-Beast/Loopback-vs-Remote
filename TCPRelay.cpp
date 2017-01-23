@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <sstream>
 #include <pthread.h>
-#include <mutex>
+//#include <mutex>
 
 using namespace std;
 
@@ -24,7 +24,8 @@ void HandleTCPClient(TCPSocket *sock); // TCP client handling function
 
 unsigned short relayPort = 1111; 
 unsigned short echoServPort = 1112;
-string echoServAddress = "127.0.0.1";  
+string echoServAddress = "10.0.0.27";  
+//string echoServAddress = "127.0.0.1";  
 
 TCPServerSocket relaySock(relayPort);   
 
